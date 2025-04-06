@@ -1,0 +1,123 @@
+﻿@using MvcCvProjesi.Models.entity;
+@model  List<TblHakkimda>
+@{
+    Layout = null; // ASP.NET MVC/Razor: Bu sayfanın bir ana layout kullanmayacağını belirtir.
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" /> <!-- Sayfanın karakter kodlamasını UTF-8 olarak ayarlar (Türkçe karakterler için önemli). -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" /> <!-- Mobil cihazlarda sayfanın nasıl ölçekleneceğini ayarlar. -->
+    <meta name="description" content="" /> <!-- Sayfanın kısa açıklaması (SEO için). -->
+    <meta name="author" content="" /> <!-- Sayfanın yazar(lar)ı (SEO için). -->
+    <title>Mvc Cv Projesi</title> <!-- Tarayıcı sekmesinde görünecek sayfa başlığı. -->
+    <link rel="icon" type="image/x-icon" href="/startbootstrap-resume-gh-pages/assets/img/favicon.ico" /> <!-- Tarayıcı sekmesindeki küçük ikon (favicon). -->
+    <!-- Font Awesome ikonları (ücretsiz sürüm) - İkonları kullanmak için gerekli script. -->
+    <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google Fonts - Özel yazı tiplerini yükler. -->
+    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
+    <!-- Ana tema CSS dosyası (Bootstrap içerir) - Sayfanın stilini belirler. -->
+    <link href="/startbootstrap-resume-gh-pages/css/styles.css" rel="stylesheet" />
+</head>
+<body id="page-top">
+    <!-- Sayfanın gövdesi, ID'si sayfa içi linkleme için kullanılabilir. -->
+    <!-- Navigation (Gezinme Menüsü)-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+        <!-- Bootstrap Navbar: Genişleyebilir, koyu tema, ana renk arka planı, üste sabitlenmiş. -->
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">
+            <!-- Marka/Logo alanı, tıklandığında sayfanın en başına gider. -->
+            <span class="d-block d-lg-none">UMUT TKY</span> <!-- Küçük ekranlarda görünecek metin marka. -->
+            <span class="d-none d-lg-block">
+                <!-- Sadece geniş ekranlarda görünecek profil resmi. -->
+                <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="/startbootstrap-resume-gh-pages/assets/img/profile.jpg" alt="Profil Resmi" /> <!-- Profil resmi, duyarlı, yuvarlak kenarlı, ortalanmış. -->
+            </span>
+        </a>
+        <!-- Mobil menü butonu (Toggler) -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <!-- Menü içeriği (açılır/kapanır) -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+                <!-- Menü linklerini içeren liste. -->
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">Hakkımda</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Deneyimlerim</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Eğitim Hayatım</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Yeteneklerim</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Hobilerim</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">Sertifikalarım</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">İletişim</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Page Content (Sayfa İçeriği) -->
+    <!-- DÜZELTME: 'container-fluid' yerine 'container' kullanıldı. Bu sayede içerik ortalanır ve yanlarda boşluk kalır. -->
+    <div class="container p-0">
+        <!-- Ana içerik konteyneri. 'container' sabit genişlik ve ortalama sağlar. p-0 iç boşlukları sıfırlar (bölümler kendi boşluklarını yönetir). -->
+        <!-- About (Hakkımda) Bölümü -->
+        @foreach (var x in Model)
+        {
+            <section class="resume-section" id="about">
+                <div class="resume-section-content">
+                    <h1 class="mb-0">
+                        @x.Ad
+                        <span class="text-primary">@x.Soyad</span>
+                    </h1>
+                    <div class="subheading mb-5">
+                        @x.Adres· @x.Telefon·
+                        <a href="mailto:name@email.com">@x.Mail</a>
+                    </div>
+                    <p class="lead mb-5">@x.Aciklama</p>
+                    @*@Html.Action("SosyalMedya")*@
+                </div>
+            </section>
+        }
+
+        <hr class="m-0" /> <!-- Bölümler arası yatay çizgi, boşluk yok. -->
+        <!-- Experience (Deneyim) Bölümü -->
+        <section class="resume-section" id="experience">
+            @Html.Action("Deneyim")
+        </section>
+
+        <hr class="m-0" />
+
+        <!-- Education-->
+        <section class="resume-section" id="education">
+            @Html.Action("Egitimlerim")
+        </section>
+
+        <hr class="m-0" />
+
+        <!-- Skills-->
+        <section class="resume-section" id="skills">
+            @Html.Action("Yeteneklerim")
+        </section>
+
+        <hr class="m-0" />
+        <!-- Interests-->
+        <section class="resume-section" id="interests">
+            @Html.Action("Hobilerim")
+        </section>
+
+        <hr class="m-0" />
+
+        <!-- Awards-->
+        <section class="resume-section" id="awards">
+            @Html.Action("Sertifikalar")
+        </section>
+        <!-- Awards-->
+
+        <section class="resume-section" id="contact">
+            @Html.Action("İletisim")
+        </section>
+
+    </div>
+    <!-- Bootstrap çekirdek JS dosyaları -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> <!-- jQuery kütüphanesi (Bootstrap JS için gerekli). -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script> <!-- Bootstrap JavaScript (açılır menüler, vb. için). -->
+    <!-- Üçüncü parti eklenti JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script> <!-- Yumuşak kaydırma efekti için jQuery Easing eklentisi. -->
+    <!-- Ana tema JS dosyası -->
+    <script src="/startbootstrap-resume-gh-pages/js/scripts.js"></script> <!-- Temaya özel JavaScript kodları (örn: yumuşak kaydırma aktivasyonu). -->
+</body>
+</html>
