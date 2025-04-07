@@ -1,0 +1,75 @@
+﻿@using MvcCvProjesi.Models.entity;
+@model  List<TblSertifikalarim>
+@{
+    ViewBag.Title = "Sertifikalar"; // Başlığı daha açıklayıcı yaptım
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+<!DOCTYPE html>
+<html>
+<body class="hold-transition sidebar-mini">
+    <section class="content">
+        <div class="container-fluid">
+            <div class="row">
+                <!-- /.col -->
+                <div class="col-md-12">
+                    <div class="card">
+                        <div class="card-header p-2">
+                            <h3 class="card-title">Sertifikalarım</h3> @* Bağlam için bir başlık eklendi *@
+                        </div><!-- /.card-header -->
+                        <div class="card-body">
+                            <div class="tab-pane active" id="timeline">
+                                @* Tek sekme ise 'active' sınıfı eklendi *@
+                                <!-- Zaman çizelgesi -->
+                                <div class="timeline timeline-inverse">
+                                    <!-- zaman etiketi -->
+                                    @foreach (var x in Model)
+                                    {
+                                        <div class="time-label">
+                                            <span class="bg-success">
+                                                @x.Tarih
+                                            </span>
+                                        </div>
+                                        <!-- /.zaman etiketi -->
+                                        <!-- zaman çizelgesi öğesi -->
+                                        <div>
+                                            <i class="fas fa-certificate bg-primary"></i> @* İkonu daha uygun bir tane ile değiştirdim *@
+                                            <div class="timeline-item">
+                                                <span class="time"><i class="far fa-clock"></i> @x.Tarih</span> @* İsteğe bağlı: Tarih/saati buraya da ekleyebilirsiniz *@
+                                                <h3 class="timeline-header border-0"><a href="#">Sertifika</a></h3> @* İsteğe bağlı: Başlık *@
+
+                                                <div class="timeline-body">
+                                                    @x.Aciklama
+                                                </div>
+                                                <div class="timeline-footer">
+                                                    <a href="/Sertifika/SertifikaGetir/@x.ID" class="btn btn-primary btn-sm">Düzenle</a>
+
+                                                    @* --- BU SATIRI GÜNCELLEYİN --- *@
+                                                    <a href="/Sertifika/SertifikaSil/@x.ID"
+                                                       class="btn btn-danger btn-sm ms-2" @* <--- ms-2 SINIFINI EKLEYİN *@
+                                                       onclick="return confirm('Bu sertifikayı silmek istediğinizden emin misiniz?');">
+                                                        Sil
+                                                    </a>
+                                                    @* --- GÜNCELLEME SONU --- *@
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- ZAMAN ÇİZELGESİ ÖĞESİ SONU -->
+                                    }
+                                    <div>
+                                        <i class="far fa-clock bg-gray"></i>
+                                    </div>
+                                </div>
+                                <br /> @* Boşluk için satır sonu eklendi *@
+                                <a href="/Sertifika/YeniSertifika/" class="btn btn-info">Yeni Sertifika Girişi</a>
+                            </div>
+                        </div><!-- /.card-body -->
+                    </div>
+                    <!-- /.card -->
+                </div>
+                <!-- /.col -->
+            </div>
+            <!-- /.row -->
+        </div><!-- /.container-fluid -->
+    </section>
+</body>
+</html>
