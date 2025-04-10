@@ -121,5 +121,12 @@ Projeye katkıda bulunmak isterseniz:
 ![Yönetici Arayüzü](https://github.com/umutramazanegi/McvCvProjesi/blob/main/Resimler/AdminGirisSayfasi.png?raw=true "Yönetici Arayüzü")
 *<p align="center">Hakkımda Ekranı</p>*
 ![Hakkımda Ekranı](https://github.com/umutramazanegi/McvCvProjesi/blob/main/Resimler/Hakkimda.png?raw=true "Hakkımda Ekranı")
+*<p align="center">Deneyimlerim Ekranı</p>*
+![Deneyimlerim Ekranı](https://github.com/umutramazanegi/McvCvProjesi/blob/main/Resimler/deneyimler.png?raw=true "Deneyimlerim Ekranı")
+*<p align="center">Yeteneklerim Ekranı</p>*
+![Yeteneklerim Ekranı](https://github.com/umutramazanegi/McvCvProjesi/blob/main/Resimler/yetenekler.png?raw=true "Yeteneklerim Ekranı")
+*<p align="center">Hobilerim Ekranı</p>*
+![Hobilerim Ekranı](https://github.com/umutramazanegi/McvCvProjesi/blob/main/Resimler/hobilerim.png?raw=true "Hobilerim Ekranı")
+
 
 ---
