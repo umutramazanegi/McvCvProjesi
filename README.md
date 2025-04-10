@@ -112,3 +112,14 @@ Projeye katkıda bulunmak isterseniz:
 5.  Bir Pull Request açın.
 
 İyileştirme önerileri ve hata bildirimleri için lütfen bir [Issue](https://github.com/SENIN_KULLANICI_ADIN/MvcCvProjesi/issues) açmaktan çekinmeyin.
+## 📸 Uygulama Görüntüleri
+
+*(Projenin genel görünümünü gösteren bazı ekran görüntüleri)*
+
+![Yönetici Arayüzü](https://github.com/umutramazanegi/McvCvProjesi/blob/main/Resimler/AdminGirisSayfasi.png?raw=true "Yönetici Arayüzü")
+*<p align="center">Yönetici Paneli Ana Arayüzü</p>*
+
+![Giriş Ekranı](https://github.com/umutramazanegi/McvCvProjesi/blob/main/Resimler/login.png?raw=true "Giriş Ekranı")
+*<p align="center">Yönetici Giriş Ekranı</p>*
+
+---
