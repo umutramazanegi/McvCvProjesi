@@ -7,10 +7,12 @@ using MvcCvProjesi.Models.entity;
 using MvcCvProjesi.Repositories;
 namespace MvcCvProjesi.Controllers
 {
+    [Authorize]
     public class EgitimController : Controller
     {
         // GET: Egitim
         GenericRepositories<TblEgitimlerim> repo = new GenericRepositories<TblEgitimlerim>();
+       
         public ActionResult Index()
         {
             var egitim = repo.List();

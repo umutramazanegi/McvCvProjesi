@@ -57,10 +57,10 @@ namespace MvcCvProjesi.Controllers
             db.SaveChanges();
             return PartialView();
         }
-        //public PartialViewResult SosyalMedya()
-        //{
-        //    var medya = db.TblSosyalMedya.Where(x => x.Durum == true).ToList();
-        //    return PartialView(medya);
-        //}
+        public PartialViewResult SosyalMedya()
+        {
+            var medya = db.TblSosyalMedya.Where(x => x.Durum == true).ToList();
+            return PartialView(medya);
+        }
     }
 }
