@@ -5,7 +5,6 @@
 [![Entity Framework](https://img.shields.io/badge/Entity_Framework-6-lightgrey.svg)](https://docs.microsoft.com/en-us/ef/)
 [![AdminLTE](https://img.shields.io/badge/AdminLTE-3-blue.svg)](https://adminlte.io/)
 [![Bootstrap](https://img.shields.io/badge/Bootstrap-4-purple.svg)](https://getbootstrap.com/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE) <!-- Eğer bir LICENSE dosyanız varsa -->
 <!-- [![Build Status](https://img.shields.io/travis/com/YOUR_USERNAME/MvcCvProjesi.svg?style=flat-square)](https://travis-ci.com/YOUR_USERNAME/MvcCvProjesi) --> <!-- CI/CD kurarsanız bu rozeti aktif edebilirsiniz -->
 
 Kişisel bir CV (Özgeçmiş) veya portföy web sitesi oluşturmak ve yönetmek için tasarlanmış bir **ASP.NET MVC 5** uygulamasıdır. CV bilgilerini modern bir arayüzle sunar ve içeriği yönetmek için kapsamlı bir yönetici paneli içerir.
