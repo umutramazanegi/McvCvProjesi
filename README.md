@@ -113,9 +113,3 @@ Projeye katkıda bulunmak isterseniz:
 5.  Bir Pull Request açın.
 
 İyileştirme önerileri ve hata bildirimleri için lütfen bir [Issue](https://github.com/SENIN_KULLANICI_ADIN/MvcCvProjesi/issues) açmaktan çekinmeyin.
-
----
-
-## 📜 Lisans
-
-Bu proje MIT Lisansı altında dağıtılmaktadır. Daha fazla ayrıntı için `LICENSE` dosyasına bakın (varsa).
