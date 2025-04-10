@@ -115,11 +115,11 @@ Projeye katkıda bulunmak isterseniz:
 ## 📸 Uygulama Görüntüleri
 
 *(Projenin genel görünümünü gösteren bazı ekran görüntüleri)*
-
-![Yönetici Arayüzü](https://github.com/umutramazanegi/McvCvProjesi/blob/main/Resimler/AdminGirisSayfasi.png?raw=true "Yönetici Arayüzü")
 *<p align="center">Yönetici Paneli Ana Arayüzü</p>*
 
-![Giriş Ekranı](https://github.com/umutramazanegi/McvCvProjesi/blob/main/Resimler/login.png?raw=true "Giriş Ekranı")
+![Yönetici Arayüzü](https://github.com/umutramazanegi/McvCvProjesi/blob/main/Resimler/AdminGirisSayfasi.png?raw=true "Yönetici Arayüzü")
 *<p align="center">Yönetici Giriş Ekranı</p>*
+![Giriş Ekranı](https://github.com/umutramazanegi/McvCvProjesi/blob/main/Resimler/login.png?raw=true "Giriş Ekranı")
+
 
 ---
