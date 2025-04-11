@@ -112,3 +112,21 @@ Projeye katkıda bulunmak isterseniz:
 5.  Bir Pull Request açın.
 
 İyileştirme önerileri ve hata bildirimleri için lütfen bir [Issue](https://github.com/SENIN_KULLANICI_ADIN/MvcCvProjesi/issues) açmaktan çekinmeyin.
+## 📸 Uygulama Görüntüleri
+
+*(Projenin genel görünümünü gösteren bazı ekran görüntüleri)*
+*<p align="center">Yönetici Giriş Ekranı</p>*
+![Giriş Ekranı](https://github.com/umutramazanegi/McvCvProjesi/blob/main/Resimler/login.png?raw=true "Giriş Ekranı")
+*<p align="center">Yönetici Paneli Ana Arayüzü</p>*
+![Yönetici Arayüzü](https://github.com/umutramazanegi/McvCvProjesi/blob/main/Resimler/AdminGirisSayfasi.png?raw=true "Yönetici Arayüzü")
+*<p align="center">Hakkımda Ekranı</p>*
+![Hakkımda Ekranı](https://github.com/umutramazanegi/McvCvProjesi/blob/main/Resimler/Hakkimda.png?raw=true "Hakkımda Ekranı")
+*<p align="center">Deneyimlerim Ekranı</p>*
+![Deneyimlerim Ekranı](https://github.com/umutramazanegi/McvCvProjesi/blob/main/Resimler/deneyimler.png?raw=true "Deneyimlerim Ekranı")
+*<p align="center">Yeteneklerim Ekranı</p>*
+![Yeteneklerim Ekranı](https://github.com/umutramazanegi/McvCvProjesi/blob/main/Resimler/yetenekler.png?raw=true "Yeteneklerim Ekranı")
+*<p align="center">Hobilerim Ekranı</p>*
+![Hobilerim Ekranı](https://github.com/umutramazanegi/McvCvProjesi/blob/main/Resimler/hobilerim.png?raw=true "Hobilerim Ekranı")
+
+
+---
